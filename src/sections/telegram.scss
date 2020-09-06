@@ -166,6 +166,7 @@
 
   &__button1,
   &__button2 {
+    position: relative;
     display: block;
     background-color: $electricPurple;
     max-width: 265px;
@@ -188,6 +189,42 @@
 
     @media screen and (max-width: 767px) {
       padding: 15px 0;
+    }
+  }
+
+  &__button2:hover {
+    .telegram__tooltiptext {
+      visibility: visible;
+    }
+  }
+
+  &__tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 250px;
+    background-color: #2d8bab;
+    border: 2px solid $white;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -75px;
+    transition: opacity 0.3s;
+    transform: translateX(-20%);
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 17px;
+      border-style: solid;
+      border-color: $white transparent transparent transparent;
+      transform: translateX(-50%);
     }
   }
 }

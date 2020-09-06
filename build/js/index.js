@@ -1,6 +1,9 @@
 const copy = () => {
   new ClipboardJS(".telegram__button2", {
     text: function (trigger) {
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Скопировано";
+
       return document.getElementById("copyInput").getAttribute("data-value");
     },
   });
@@ -22,6 +25,6 @@ $(document).ready(function () {
           window.location.hash = hash;
         }
       );
-    } // Конец, если
+    }
   });
 });

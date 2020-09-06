@@ -1329,6 +1329,7 @@ textarea {
         .telegram__input2:before {
           content: ""; } }
   .telegram__button1, .telegram__button2 {
+    position: relative;
     display: block;
     background-color: #a100f2;
     max-width: 265px;
@@ -1352,6 +1353,40 @@ textarea {
     @media screen and (max-width: 767px) {
       .telegram__button1, .telegram__button2 {
         padding: 15px 0; } }
+  .telegram__button2:hover .telegram__tooltiptext {
+    visibility: visible; }
+  .telegram__tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 250px;
+    background-color: #2d8bab;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -75px;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    -webkit-transform: translateX(-20%);
+    -ms-transform: translateX(-20%);
+    transform: translateX(-20%); }
+    .telegram__tooltiptext:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 17px;
+      border-style: solid;
+      border-color: #fff transparent transparent transparent;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
 
 .app {
   position: relative;
