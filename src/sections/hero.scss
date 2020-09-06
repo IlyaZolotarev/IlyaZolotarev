@@ -39,14 +39,21 @@
     font-weight: bold;
     margin-bottom: 64px;
 
-    @media screen and (max-width: 495px) {
-      font-size: 50px;
-      margin-bottom: 30px;
+    @media screen and (max-width: 511px) {
+      font-size: 58px;
+      margin-bottom: 50px;
     }
 
     @media screen and (max-width: 500px) {
       font-size: 45px;
-      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 495px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 434px) {
+      font-size: 40px;
     }
 
     @media screen and (max-width: 423px) {
@@ -55,10 +62,6 @@
 
     @media screen and (max-width: 365px) {
       line-height: 60px;
-      font-size: 39px;
-    }
-
-    @media screen and (max-width: 365px) {
       font-size: 36px;
     }
 
