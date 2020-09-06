@@ -1263,6 +1263,9 @@ textarea {
     @media screen and (max-width: 386px) {
       .telegram__title {
         font-size: 45px; } }
+    @media screen and (max-width: 344px) {
+      .telegram__title {
+        font-size: 42px; } }
   .telegram__description {
     font-size: 21px;
     color: #fff;
