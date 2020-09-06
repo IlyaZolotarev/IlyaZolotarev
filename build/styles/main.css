@@ -1058,7 +1058,11 @@ textarea {
     position: absolute;
     content: url("./../../build/assets/images/money.png");
     top: -55px;
-    left: -253px; }
+    left: -253px;
+    left: 328px;
+    top: 507px;
+    left: 328px;
+    top: 507px; }
     @media screen and (max-width: 1299px) {
       .ea-left-block:before {
         left: -340px; } }
@@ -1076,22 +1080,39 @@ textarea {
         top: 551px; } }
     @media screen and (max-width: 575px) {
       .ea-left-block:before {
-        left: 454px; } }
+        left: 454px;
+        top: 493px; } }
+    @media screen and (max-width: 559px) {
+      .ea-left-block:before {
+        left: 454px;
+        top: 590px; } }
     @media screen and (max-width: 535px) {
       .ea-left-block:before {
         left: 405px;
         top: 500px; } }
+    @media screen and (max-width: 474px) {
+      .ea-left-block:before {
+        left: 372px;
+        top: 605px; } }
     @media screen and (max-width: 450px) {
       .ea-left-block:before {
-        left: 349px;
-        top: 474px; } }
+        left: 360px;
+        top: 451px; } }
+    @media screen and (max-width: 430px) {
+      .ea-left-block:before {
+        left: 328px;
+        top: 507px; } }
     @media screen and (max-width: 368px) {
       .ea-left-block:before {
-        left: 292px;
-        top: 509px; } }
+        left: 262px;
+        top: 589px; } }
     @media screen and (max-width: 368px) {
       .ea-left-block:before {
-        left: 258px;
+        left: 262px;
+        top: 589px; } }
+    @media screen and (max-width: 320px) {
+      .ea-left-block:before {
+        left: 236px;
         top: 589px; } }
 
 .ea-right-block {
