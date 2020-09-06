@@ -559,7 +559,14 @@ textarea {
         font-size: 40px; } }
     @media screen and (max-width: 365px) {
       .hero__title {
-        line-height: 60px; } }
+        line-height: 60px;
+        font-size: 39px; } }
+    @media screen and (max-width: 365px) {
+      .hero__title {
+        font-size: 36px; } }
+    @media screen and (max-width: 325px) {
+      .hero__title {
+        font-size: 35px; } }
   .hero__description {
     max-width: 610px;
     width: 100%;
