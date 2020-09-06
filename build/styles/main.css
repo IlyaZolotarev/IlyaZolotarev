@@ -283,8 +283,8 @@ textarea {
 .container {
   width: 100%;
   max-width: calc(1198px + 16px * 2);
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 24px;
+  padding-left: 24px;
   margin: 0 auto; }
 
 @media (min-width: 576px) {
@@ -524,7 +524,7 @@ textarea {
   @media screen and (max-width: 820px) {
     .hero {
       background-position: right 38% bottom 0%; } }
-  @media screen and (max-width: 331px) {
+  @media screen and (max-width: 340px) {
     .hero {
       background-position: right 42% bottom 101%; } }
   @media screen and (max-width: 1020px) {
@@ -550,16 +550,16 @@ textarea {
       .hero__title {
         font-size: 50px;
         margin-bottom: 30px; } }
-    @media screen and (max-width: 410px) {
+    @media screen and (max-width: 500px) {
       .hero__title {
         font-size: 45px;
         margin-bottom: 50px; } }
     @media screen and (max-width: 423px) {
       .hero__title {
         font-size: 40px; } }
-    @media screen and (max-width: 332px) {
+    @media screen and (max-width: 365px) {
       .hero__title {
-        line-height: 50px; } }
+        line-height: 60px; } }
   .hero__description {
     max-width: 610px;
     width: 100%;
@@ -585,7 +585,7 @@ textarea {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center; } }
-    @media screen and (max-width: 410px) {
+    @media screen and (max-width: 575px) {
       .hero__buttons-block {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -606,11 +606,11 @@ textarea {
     @media screen and (max-width: 991px) {
       .hero__button1 {
         width: 50%; } }
-    @media screen and (max-width: 410px) {
+    @media screen and (max-width: 575px) {
       .hero__button1 {
         margin-right: 0;
         margin-bottom: 30px;
-        max-width: 300px;
+        max-width: 100%;
         width: 100%; } }
   .hero__button2 {
     display: block;
@@ -637,9 +637,9 @@ textarea {
     @media screen and (max-width: 991px) {
       .hero__button2 {
         width: 50%; } }
-    @media screen and (max-width: 410px) {
+    @media screen and (max-width: 575px) {
       .hero__button2 {
-        max-width: 300px;
+        max-width: 100%;
         width: 100%; } }
 
 .terms {
@@ -668,6 +668,11 @@ textarea {
         -ms-flex-pack: center;
         justify-content: center;
         padding-left: 0; } }
+    @media (max-width: 767px) {
+      .terms__list {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; } }
   .terms__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -676,7 +681,7 @@ textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-width: 360px;
+    max-width: 354px;
     width: 100%;
     margin-right: 50px;
     margin-bottom: 60px; }
@@ -685,7 +690,8 @@ textarea {
         max-width: 300px; } }
     @media (max-width: 767px) {
       .terms__item {
-        margin-right: 0 !important; } }
+        margin-right: 0 !important;
+        max-width: 100%; } }
     .terms__item:nth-child(3) {
       margin-right: 0; }
       @media (max-width: 1299px) {
@@ -724,6 +730,9 @@ textarea {
     width: 100%;
     font-size: 18px;
     color: #606060; }
+    @media (max-width: 767px) {
+      .terms__description {
+        max-width: 100%; } }
 
 .vacancy {
   position: relative;
@@ -1354,7 +1363,8 @@ textarea {
       .telegram__button1, .telegram__button2 {
         padding: 15px 0; } }
   .telegram__button2:hover .telegram__tooltiptext {
-    visibility: visible; }
+    visibility: visible;
+    opacity: 1; }
   .telegram__tooltiptext {
     visibility: hidden;
     position: absolute;
@@ -1369,6 +1379,7 @@ textarea {
     bottom: 125%;
     left: 50%;
     margin-left: -75px;
+    opacity: 0;
     -webkit-transition: opacity 0.3s;
     -o-transition: opacity 0.3s;
     transition: opacity 0.3s;

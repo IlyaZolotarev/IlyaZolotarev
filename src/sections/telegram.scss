@@ -195,6 +195,7 @@
   &__button2:hover {
     .telegram__tooltiptext {
       visibility: visible;
+      opacity: 1;
     }
   }
 
@@ -212,6 +213,7 @@
     bottom: 125%;
     left: 50%;
     margin-left: -75px;
+    opacity: 0;
     transition: opacity 0.3s;
     transform: translateX(-20%);
 
