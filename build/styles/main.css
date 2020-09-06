@@ -546,23 +546,28 @@ textarea {
     max-width: 490px;
     font-weight: bold;
     margin-bottom: 64px; }
-    @media screen and (max-width: 495px) {
+    @media screen and (max-width: 575px) {
       .hero__title {
-        font-size: 50px;
-        margin-bottom: 30px; } }
+        text-align: center; } }
+    @media screen and (max-width: 511px) {
+      .hero__title {
+        font-size: 58px;
+        margin-bottom: 50px; } }
     @media screen and (max-width: 500px) {
       .hero__title {
-        font-size: 45px;
-        margin-bottom: 50px; } }
+        font-size: 45px; } }
+    @media screen and (max-width: 495px) {
+      .hero__title {
+        margin-bottom: 30px; } }
+    @media screen and (max-width: 434px) {
+      .hero__title {
+        font-size: 40px; } }
     @media screen and (max-width: 423px) {
       .hero__title {
         font-size: 40px; } }
     @media screen and (max-width: 365px) {
       .hero__title {
         line-height: 60px;
-        font-size: 39px; } }
-    @media screen and (max-width: 365px) {
-      .hero__title {
         font-size: 36px; } }
     @media screen and (max-width: 325px) {
       .hero__title {
@@ -577,6 +582,9 @@ textarea {
     @media screen and (max-width: 991px) {
       .hero__description {
         margin-bottom: 40px; } }
+    @media screen and (max-width: 575px) {
+      .hero__description {
+        text-align: center; } }
   .hero__buttons-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -782,14 +790,17 @@ textarea {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding: 65px 100px 90px 100px;
+      padding: 65px 0 90px 0;
       background-image: url("./../../build/assets/images/vacansy_back-big.jpg");
       background-repeat: no-repeat;
       background-position: right 50% bottom 71%; } }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 767px) {
     .left-block {
-      padding: 65px 18px 90px 50px; } }
+      padding: 65px 130px 90px 130px; } }
   @media screen and (max-width: 669px) {
+    .left-block {
+      padding: 50px 60px 50px 60px; } }
+  @media screen and (max-width: 575px) {
     .left-block {
       padding: 50px 24px 50px 24px; } }
   .left-block__content {
@@ -803,7 +814,7 @@ textarea {
     font-weight: bold;
     color: #fff;
     margin-bottom: 50px; }
-    @media screen and (max-width: 630px) {
+    @media screen and (max-width: 767px) {
       .left-block__title {
         margin-bottom: 30px; } }
     @media screen and (max-width: 350px) {
@@ -836,14 +847,14 @@ textarea {
     @media screen and (max-width: 776px) {
       .left-block__remark2 {
         margin-right: 0; } }
-    @media screen and (max-width: 630px) {
+    @media screen and (max-width: 767px) {
       .left-block__remark2 {
         margin-bottom: 40px; } }
   .left-block__description {
     font-size: 21px;
     color: #fff;
     margin-bottom: 70px; }
-    @media screen and (max-width: 630px) {
+    @media screen and (max-width: 767px) {
       .left-block__description {
         margin-bottom: 40px; } }
   @media screen and (max-width: 1094px) {
@@ -857,12 +868,15 @@ textarea {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; } }
-  @media screen and (max-width: 630px) {
+  @media screen and (max-width: 767px) {
     .left-block__button-wrapper {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start; } }
   .left-block__button {
     display: block;
     overflow: hidden;

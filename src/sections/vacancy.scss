@@ -32,17 +32,21 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 65px 100px 90px 100px;
+    padding: 65px 0 90px 0;
     background-image: url("./../../build/assets/images/vacansy_back-big.jpg");
     background-repeat: no-repeat;
     background-position: right 50% bottom 71%;
   }
 
-  @media screen and (max-width: 800px) {
-    padding: 65px 18px 90px 50px;
+  @media screen and (max-width: 767px) {
+    padding: 65px 130px 90px 130px;
   }
 
   @media screen and (max-width: 669px) {
+    padding: 50px 60px 50px 60px;
+  }
+
+  @media screen and (max-width: 575px) {
     padding: 50px 24px 50px 24px;
   }
 
@@ -61,7 +65,7 @@
     color: $white;
     margin-bottom: 50px;
 
-    @media screen and (max-width: 630px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
 
@@ -104,7 +108,7 @@
       margin-right: 0;
     }
 
-    @media screen and (max-width: 630px) {
+    @media screen and (max-width: 767px) {
       // max-width: 263px;
       // width: 100%;
       margin-bottom: 40px;
@@ -116,7 +120,7 @@
     color: $white;
     margin-bottom: 70px;
 
-    @media screen and (max-width: 630px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 40px;
     }
   }
@@ -128,8 +132,9 @@
       align-items: center;
     }
 
-    @media screen and (max-width: 630px) {
+    @media screen and (max-width: 767px) {
       flex-direction: column;
+      align-items: flex-start;
     }
   }
 
