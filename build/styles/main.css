@@ -1058,11 +1058,7 @@ textarea {
     position: absolute;
     content: url("./../../build/assets/images/money.png");
     top: -55px;
-    left: -253px;
-    left: 328px;
-    top: 507px;
-    left: 328px;
-    top: 507px; }
+    left: -253px; }
     @media screen and (max-width: 1299px) {
       .ea-left-block:before {
         left: -340px; } }
@@ -1080,40 +1076,43 @@ textarea {
         top: 551px; } }
     @media screen and (max-width: 575px) {
       .ea-left-block:before {
-        left: 454px;
-        top: 493px; } }
+        top: 499px;
+        left: 466px; } }
     @media screen and (max-width: 559px) {
       .ea-left-block:before {
-        left: 454px;
-        top: 590px; } }
+        top: 587px; } }
     @media screen and (max-width: 535px) {
       .ea-left-block:before {
-        left: 405px;
+        left: 426px;
         top: 500px; } }
     @media screen and (max-width: 474px) {
       .ea-left-block:before {
-        left: 372px;
-        top: 605px; } }
+        left: 376px;
+        top: 597px; } }
     @media screen and (max-width: 450px) {
       .ea-left-block:before {
-        left: 360px;
-        top: 451px; } }
+        left: 362px;
+        top: 449px; } }
     @media screen and (max-width: 430px) {
       .ea-left-block:before {
-        left: 328px;
-        top: 507px; } }
+        left: 330px;
+        top: 520px; } }
+    @media screen and (max-width: 407px) {
+      .ea-left-block:before {
+        left: 317px;
+        top: 482px; } }
+    @media screen and (max-width: 388px) {
+      .ea-left-block:before {
+        left: 303px;
+        top: 552px; } }
     @media screen and (max-width: 368px) {
       .ea-left-block:before {
-        left: 262px;
-        top: 589px; } }
-    @media screen and (max-width: 368px) {
-      .ea-left-block:before {
-        left: 262px;
+        left: 258px;
         top: 589px; } }
     @media screen and (max-width: 320px) {
       .ea-left-block:before {
-        left: 236px;
-        top: 589px; } }
+        left: 238px;
+        top: 578px; } }
 
 .ea-right-block {
   max-width: 550px;
