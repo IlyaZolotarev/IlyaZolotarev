@@ -1,0 +1,151 @@
+@import "./../constants/index.scss";
+
+.hero {
+  padding: 60px 0 80px;
+  background-image: url("./../../build/assets/images/background-header.jpg");
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 1925px) {
+    background-image: url("./../../build/assets/images/background-big.jpg");
+    background-position: right 50% bottom 99%;
+  }
+
+  @media screen and (max-width: 1199px) {
+    background-position: right 67% bottom 0%;
+  }
+
+  @media screen and (max-width: 820px) {
+    background-position: right 38% bottom 0%;
+  }
+  background-position: right 42% bottom 101%;
+
+  @media screen and (max-width: 331px) {
+    background-position: right 42% bottom 101%;
+  }
+
+  &__content {
+    @media screen and (max-width: 1020px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 72px;
+    color: $white;
+    max-width: 490px;
+    font-weight: bold;
+    margin-bottom: 64px;
+
+    @media screen and (max-width: 495px) {
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 410px) {
+      font-size: 45px;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 423px) {
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: 332px) {
+      line-height: 50px;
+    }
+  }
+
+  &__description {
+    max-width: 610px;
+    width: 100%;
+    font-size: 21px;
+    line-height: 36px;
+    color: $white;
+    margin-bottom: 64px;
+
+    @media screen and (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__buttons-block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+
+    @media screen and (max-width: 991px) {
+      max-width: 100%;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 410px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__button1 {
+    max-width: 263px;
+    width: 100%;
+    font-size: 21px;
+    margin-right: 30px;
+
+    a {
+      color: inherit;
+      display: block;
+      padding: 15px 0;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 410px) {
+      margin-right: 0;
+      margin-bottom: 30px;
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+
+  &__button2 {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 263px;
+    width: 100%;
+    font-size: 21px;
+    color: $white;
+    padding: 15px 0;
+    text-align: center;
+
+    &:before {
+      font-family: FontAwesome;
+      content: "\f1d9";
+      position: absolute;
+      top: 15px;
+      left: -30px;
+      transition: all 200ms ease;
+      color: $black;
+    }
+
+    &:hover {
+      &::before {
+        left: 15px;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 410px) {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+}

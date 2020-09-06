@@ -1,0 +1,15 @@
+@import "./../constants/index.scss";
+
+.button {
+  background-color: transparent;
+  border: 2px solid $white;
+  color: $white;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    transition: background-color 0.3s ease;
+    background-color: $white;
+    color: $black;
+  }
+}

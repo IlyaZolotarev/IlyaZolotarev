@@ -1,0 +1,102 @@
+@import "../constants/index.scss";
+
+.header {
+  margin-bottom: 180px;
+
+  @media screen and (max-width: 991px) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (max-width: 575px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 495px) {
+    margin-bottom: 40px;
+  }
+
+  &__inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 991px) {
+      justify-content: center;
+    }
+  }
+
+  &__logo-block {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1020px) {
+      padding-left: 28px;
+    }
+
+    @media screen and (max-width: 991px) {
+      padding-left: 0;
+    }
+  }
+
+  &__logo-wrapper {
+    max-width: 54px;
+    width: 100%;
+
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+  }
+
+  &__text-logo {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 23px;
+    color: #fff;
+    padding-top: 25px;
+  }
+
+  &__nav {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+
+    @media screen and (max-width: 1020px) {
+      max-width: 520px;
+    }
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__nav-item {
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+
+    &:hover {
+      transition: all 0.2s ease;
+      border-bottom: 1px solid #fff;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}

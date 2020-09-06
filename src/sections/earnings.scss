@@ -1,0 +1,195 @@
+@import "./../constants/index.scss";
+
+.earnings {
+  padding: 150px 0;
+  overflow: hidden;
+
+  @media screen and (max-width: 1199px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 50px 0 50px;
+  }
+
+  &__inner-wrapper {
+    display: flex;
+  }
+}
+
+.ea-left-block {
+  position: relative;
+  max-width: 660px;
+  width: 100%;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 434px;
+  }
+
+  @media screen and (max-width: 991px) {
+    max-width: 0;
+  }
+
+  &:before {
+    z-index: -1;
+    position: absolute;
+    content: url("./../../build/assets/images/money.png");
+    top: -55px;
+    left: -253px;
+
+    @media screen and (max-width: 1299px) {
+      left: -340px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      left: -438px;
+      top: -57px;
+    }
+
+    @media screen and (max-width: 991px) {
+      left: 174px;
+    }
+
+    @media screen and (max-width: 767px) {
+      content: url("./../../build/assets/images/money2.jpg");
+      left: 500px;
+      top: 551px;
+    }
+
+    @media screen and (max-width: 575px) {
+      left: 454px;
+    }
+
+    @media screen and (max-width: 535px) {
+      left: 405px;
+      top: 500px;
+    }
+
+    @media screen and (max-width: 450px) {
+      left: 349px;
+      top: 474px;
+    }
+
+    @media screen and (max-width: 368px) {
+      left: 292px;
+      top: 509px;
+    }
+
+    @media screen and (max-width: 368px) {
+      left: 258px;
+      top: 589px;
+    }
+  }
+}
+
+.ea-right-block {
+  max-width: 550px;
+  width: 100%;
+  background-color: $white;
+
+  @media screen and (max-width: 991px) {
+    background-color: transparent;
+  }
+  &__title {
+    position: relative;
+    font-size: 60px;
+    font-weight: bold;
+    color: $black;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 535px) {
+      font-size: 50px;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 45px;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 407px) {
+      font-size: 40px;
+    }
+
+    &:before {
+      position: absolute;
+      max-width: 550px;
+      width: 100%;
+      height: 1px;
+      background-color: $veryLightGrey;
+      content: "";
+      top: 123%;
+
+      @media screen and (max-width: 450px) {
+        top: 114%;
+      }
+    }
+  }
+
+  &__sub-title {
+    position: relative;
+    font-size: 21px;
+    color: $black;
+    border-left: 14px solid $hollywoodCerise;
+    padding: 12px 0 12px 20px;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 450px) {
+      margin-bottom: 50px;
+    }
+
+    span {
+      font-weight: bold;
+      background-color: rgba($hollywoodCerise, 0.4);
+    }
+
+    &:before {
+      position: absolute;
+      max-width: 550px;
+      width: 100%;
+      height: 1px;
+      background-color: $veryLightGrey;
+      content: "";
+      top: 121%;
+      left: -3%;
+    }
+  }
+
+  &__description {
+    font-size: 21px;
+    color: $black;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 450px) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__button {
+    overflow: hidden;
+    position: relative;
+    max-width: 263px;
+    width: 100%;
+    font-size: 21px;
+    display: block;
+    color: $white;
+    padding: 15px 0;
+    text-align: center;
+    background-color: $hollywoodCerise;
+    border-radius: 5px;
+
+    &:before {
+      font-family: FontAwesome;
+      content: "\f1d9";
+      position: absolute;
+      top: 15px;
+      left: -30px;
+      transition: all 200ms ease;
+      color: $black;
+    }
+    &:hover {
+      &::before {
+        left: 25px;
+      }
+    }
+  }
+}

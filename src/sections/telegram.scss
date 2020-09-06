@@ -1,0 +1,193 @@
+@import "./../constants/index.scss";
+
+.telegram {
+  position: relative;
+  padding: 120px 0;
+  background-color: $darkViolet;
+
+  @media screen and (max-width: 991px) {
+    padding: 50px 0;
+  }
+
+  &:before {
+    top: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $deepDarkViolet;
+  }
+
+  &:after {
+    bottom: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $deepDarkViolet;
+  }
+
+  &__title {
+    font-size: 60px;
+    font-weight: bold;
+    color: $white;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 55px;
+    }
+
+    @media screen and (max-width: 386px) {
+      font-size: 45px;
+    }
+  }
+
+  &__description {
+    font-size: 21px;
+    color: $white;
+    margin-bottom: 30px;
+    max-width: 700px;
+    width: 100%;
+  }
+
+  &__input-block1 {
+    max-width: 760px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__input-block2 {
+    max-width: 850px;
+    width: 100%;
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__input1,
+  &__input2 {
+    background-color: $deepDarkViolet;
+    border: 2px solid $white;
+    margin-right: 30px;
+    border-radius: 5px;
+    padding: 30px 0px 30px 45px;
+    font-size: 30px;
+    color: $white;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+      padding: 25px 25px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 460px) {
+      font-size: 25px;
+      padding: 25px 15px;
+    }
+
+    @media screen and (max-width: 343px) {
+      font-size: 22px;
+      padding: 15px 5px;
+    }
+  }
+
+  &__input1 {
+    position: relative;
+    max-width: 460px;
+    width: 100%;
+
+    @media screen and (max-width: 991px) {
+      max-width: 100%;
+    }
+
+    &:hover {
+      &:before {
+        content: url("./../../build/assets/images/arrow-white.png");
+        @media screen and (max-width: 991px) {
+          content: "";
+        }
+      }
+    }
+
+    &:before {
+      position: absolute;
+      content: url("./../../build/assets/images/arrow.png");
+      top: 53%;
+      transform: translateY(-43%);
+      left: 340px;
+
+      @media screen and (max-width: 991px) {
+        content: "";
+      }
+    }
+  }
+
+  &__input2 {
+    position: relative;
+    max-width: 550px;
+    width: 100%;
+
+    @media screen and (max-width: 991px) {
+      max-width: 100%;
+    }
+
+    &:hover {
+      &:before {
+        content: url("./../../build/assets/images/arrow-white.png");
+        @media screen and (max-width: 991px) {
+          content: "";
+        }
+      }
+    }
+
+    &:before {
+      position: absolute;
+      content: url("./../../build/assets/images/arrow.png");
+      top: 53%;
+      transform: translateY(-43%);
+      left: 440px;
+
+      @media screen and (max-width: 991px) {
+        content: "";
+      }
+    }
+  }
+
+  &__button1,
+  &__button2 {
+    display: block;
+    background-color: $electricPurple;
+    max-width: 265px;
+    width: 100%;
+    font-size: 30px;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      a {
+        color: $black;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 15px 0;
+    }
+  }
+}

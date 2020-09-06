@@ -1,0 +1,27 @@
+@mixin font($f-name, $f-style, $f-weight, $f-url) {
+  @font-face {
+    font-family: $f-name;
+    font-style: $f-style;
+    font-weight: $f-weight;
+    src: url($f-url) format("woff2");
+  }
+}
+
+@include font(
+  "SFProDisplay",
+  regular,
+  400,
+  "./../../build/assets/fonts/SFProDisplay-Regular.woff2"
+);
+@include font(
+  "SFProDisplay",
+  semibold,
+  500,
+  "./../../build/assets/fonts/SFProDisplay-Semibold.woff2"
+);
+@include font(
+  "SFProDisplay",
+  bold,
+  900,
+  "./../../build/assets/fonts/SFProDisplay-Bold.woff2"
+);
